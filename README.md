@@ -1,4 +1,4 @@
-# cli-text-tool
+# tvrecinfo
 
 This tool is for getting information about episodes of tv-series by specifying the title of an episode.
 
