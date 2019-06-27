@@ -38,3 +38,8 @@ $ var=$(tvrecinfo "https://www.eplists.de/eplist.cgi?action=show&file=Alf" --tit
 $ echo $var
 01
 ```
+
+
+## Use cases
+
+
