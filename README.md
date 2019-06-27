@@ -51,3 +51,13 @@ $ echo $var
 
 ![Series-Directory](https://github.com/cadivus/tvrecinfo/blob/master/doc/images/SeriesDirectory.png?raw=true)
 
+
+### Sort MediathekView abos
+
+[https://github.com/cadivus/tvrecinfo/tree/master/examples/MediathekView](https://github.com/cadivus/tvrecinfo/tree/master/examples/MediathekView)
+
+Example:
+```
+/media/NAS/MediathekView/Tatort/ARD___Tatort___Wer_das_Schweigen_bricht___HD.mp4 
+ -> /media/NAS/Filme/Tatort/Frankfurt__Steier_und_Mey/0870__Tatort_Frankfurt_-_Wer_das_Schweigen_bricht.mp4
+ ```
