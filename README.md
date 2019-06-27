@@ -46,8 +46,8 @@ $ echo $var
 
 [https://github.com/cadivus/tvrecinfo/tree/master/examples/VDR](https://github.com/cadivus/tvrecinfo/tree/master/examples/VDR)
 
-![GitHub Logo](https://github.com/cadivus/tvrecinfo/blob/master/doc/images/Series.png?raw=true)
-Format: ![Series](url)
+![Series](https://github.com/cadivus/tvrecinfo/blob/master/doc/images/Series.png?raw=true)
 
-![GitHub Logo](https://github.com/cadivus/tvrecinfo/blob/master/doc/images/SeriesDirectory.png?raw=true)
-Format: ![Series-Directory](url)
+
+![Series-Directory](https://github.com/cadivus/tvrecinfo/blob/master/doc/images/SeriesDirectory.png?raw=true)
+
