@@ -1,13 +1,12 @@
 #!/bin/bash
 
+#Uses https://github.com/cadivus/cli-text-tool
+
 working_directory="/media/NAS/MediathekView/SOKO_Leipzig"
 target_folder="/media/NAS/Filme/SOKO/SOKO_Leipzig"
+
 serie='SOKO_Leipzig'
 database='https://www.eplists.de/eplist.cgi?action=show&file=SOKO%20Leipzig'
-
-slash='/'
-strich='_'
-sep='_-_'
 
 rm $working_directory/*Hörfassung*.mp4
 
@@ -16,7 +15,7 @@ find $working_directory/*.mp4 | while read line; do
   echo $filename; 
   
   #extract episode-name
-  var_mod=$(terminal-text-tool input="$filename" selectsplit2='___' remove='.mp4')
+  var_mod=$(cli-text-tool "$filename" --selectsplit 2 '___' --remove '.mp4')
   indb=$(tvrecinfo "$database" --title="$var_mod" --in-database)
     
   if [ "$indb" = "True" ]; then
@@ -35,7 +34,7 @@ find $working_directory/*.mp4 | while read line; do
     folder="$target_folder/Staffel$staffel"
     
     #target file
-    target="$folder$slash$ep$strich$staffel_ep$strich$strich$serie$sep$var_mod.mp4"
+    target="${folder}/${ep}_${staffel_ep}__${serie}_-_$var_mod.mp4"
     
     echo $folder
     echo $target
