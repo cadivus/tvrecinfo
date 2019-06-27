@@ -42,4 +42,12 @@ $ echo $var
 
 ## Use cases
 
+### Sort VDR-Recording
 
+[https://github.com/cadivus/tvrecinfo/tree/master/examples/VDR](https://github.com/cadivus/tvrecinfo/tree/master/examples/VDR)
+
+![GitHub Logo](https://github.com/cadivus/tvrecinfo/blob/master/doc/images/Series.png?raw=true)
+Format: ![Series](url)
+
+![GitHub Logo](https://github.com/cadivus/tvrecinfo/blob/master/doc/images/SeriesDirectory.png?raw=true)
+Format: ![Series-Directory](url)
