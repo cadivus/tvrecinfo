@@ -17,12 +17,12 @@ find $source_dir -maxdepth 1 | sed 's#.*/##' | while read var; do
     echo $indb
     
     if [ "$indb" = "True" ]; then
-       staffel=$(tvrecinfo "$database" --title="$var_mod" --get-row="SE")
+       staffel=$(tvrecinfo "$database" --title="$var_mod" --get-column="SE")
        
-       staffel_ep=$(tvrecinfo "$database" --title="$var_mod" --get-row="EP")
+       staffel_ep=$(tvrecinfo "$database" --title="$var_mod" --get-column="EP")
        staffel_ep=$(printf "%02d\n" $staffel_ep)
        
-       ep=$(tvrecinfo "$database" --title="$var_mod" --get-row="No.")
+       ep=$(tvrecinfo "$database" --title="$var_mod" --get-column="No.")
        ep=$(printf "%03d\n" $ep)
        
        folder="Staffel$staffel"
