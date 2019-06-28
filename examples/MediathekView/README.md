@@ -1,6 +1,6 @@
 # tvrecinfo for MediathekView
 
-## Configuration
+## Configuration of MediathekView
 
 Download-set target:
 ```
@@ -8,3 +8,17 @@ Download-set target:
 ```
 
 
+## Setup
+
+### update.sh
+Runs "mediathekview -auto" for updating abos and runs the sort-scripts.
+
+
+### update_to_log.sh
+
+Is for cronjobs, creates a log-file.
+
+
+### sort_*.sh
+
+Sort the new movies after updating the abos.

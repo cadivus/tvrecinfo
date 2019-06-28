@@ -13,6 +13,12 @@ else:
 
 
 def database_from_parser(database):
+  """
+  Parses database-source
+
+  :param database: Database-source
+  :return: Data
+  """
   data = json_parser.get_json(database)
   try:
     cache.save_database(database, data)
@@ -22,6 +28,12 @@ def database_from_parser(database):
 
 
 def get_database(database):
+  """
+  Returns database-data.
+
+  :param database: Databsae-source
+  :return: Data
+  """
   try:
     result = cache.get_database(database)
     savedate = cache.get_savedate(database)
@@ -36,6 +48,13 @@ def get_database(database):
 
 
 def in_database(database, title):
+  """
+  Checks whether title is in database.
+
+  :param database: Database-source
+  :param title: Title
+  :return: True/False
+  """
   data = get_database(database)
   
   for row in data:
@@ -46,6 +65,13 @@ def in_database(database, title):
 
 
 def get_row(database, title):
+  """
+  Gets row from database for "title"
+
+  :param database: Database-source
+  :param title: Title
+  :return: Row in database
+  """
   data = get_database(database)
   
   for row in data:
