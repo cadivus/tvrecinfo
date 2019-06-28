@@ -47,3 +47,5 @@ find $source_dir -maxdepth 1 | sed 's#.*/##' | while read var; do
     echo ''
 done
 
+#Re-read recordings
+svdrpsend UPDR
