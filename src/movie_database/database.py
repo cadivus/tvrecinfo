@@ -1,6 +1,6 @@
 import datetime
 
-if __package__ is None or __package__ is "":
+if __package__ == None or __package__ == "":
   from tools import cache
   from tools import json_parser
   from tools import database_comparator

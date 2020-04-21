@@ -6,7 +6,7 @@ from movie_database import database as mdatabase
 parser = argparse.ArgumentParser()
 parser.add_argument('--get-column', help='Specifies column to print')
 parser.add_argument('--title', help='Specifies title')
-parser.add_argument('--in-database', action='store_true', help='Prints whether title is in database')
+parser.add_argument('--in-database', action='store_true', help='Prints whether title == in database')
 parser.add_argument('database', help='Specifies database-source')
 
 args = parser.parse_args()

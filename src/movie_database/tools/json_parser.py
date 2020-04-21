@@ -1,4 +1,4 @@
-if __package__ is None or __package__ is "":
+if __package__ == None or __package__ == "":
   from sub_json_parser import eplists_de
   from sub_json_parser import csv_file
 else:

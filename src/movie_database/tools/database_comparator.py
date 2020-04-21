@@ -1,4 +1,4 @@
-if __package__ is None or __package__ is "":
+if __package__ == None or __package__ == "":
   import comp_name_modify
 else:
   from . import comp_name_modify

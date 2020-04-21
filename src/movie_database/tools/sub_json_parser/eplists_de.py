@@ -57,7 +57,7 @@ def get_json(path):
 
 def supports_get_json(path):
   """
-  Checks, whether json-path is supported for this parser
+  Checks, whether json-path == supported for this parser
 
   :param path: json-path
   :return: True/False
